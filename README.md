@@ -1,8 +1,8 @@
 # Paypal_case_study
 This project explores and analyzes a PayPal transaction dataset to uncover patterns, identify potential anomalies, and generate actionable insights. The primary objectives were to understand transaction trends, analyze user behavior, and evaluate risk factors through descriptive and exploratory data analysis.
-Here are some SQL project-style questions you could run on this dataset:
 
-Basic Queries
+
+**Basic Queries**
 
 1.List the top 10 highest-value transactions (amount + date + currency).
 
@@ -40,7 +40,7 @@ select currency_code, avg(transaction_amount) as avg_transaction_amount from tra
 where currency_code = "USD"; 
 
 
-Joins & Lookups
+**Joins & Lookups**
 
 6.Show all transactions with the sender and recipient merchant names (join transactions with merchants twice).
 
@@ -91,7 +91,7 @@ group by M.business_name, C.country_name;
 select * from countries
 where country_name = "India"; 
 
-Date & Time Analysis
+**Date & Time Analysis**
 
 10.Find the month with the highest total transaction value.
 
@@ -143,7 +143,7 @@ select *, datediff(transaction_date, previous_transaction_date) as days_between_
 
 
 
-Window Functions & Analytics
+**Window Functions & Analytics**
 
 15.Rank all transactions per sender by amount (RANK()).
 
@@ -175,7 +175,7 @@ select sender_id, transaction_date, transaction_amount, sum(transaction_amount)o
 
 
 
-Data Cleaning & Integrity
+**Data Cleaning & Integrity**
 
 19.Find transactions with a blank currency_code.
 
