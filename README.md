@@ -283,7 +283,7 @@ WHERE m_sender.merchant_id IS NULL OR m_recipient.merchant_id IS NULL;
 ## 🛠 Tech Stack
 
 - MySQL
-- Retail Dataset
+- Paypal Dataset
 
 ---
 
